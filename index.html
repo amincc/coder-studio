@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Studio</title>
+    <link rel="icon" href="img/My project (2).png">
+
+    <style>
+#codes {
+    width: 70%;
+    height: 200px;
+    max-height: 350px;
+}
+#div1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#buttons {
+      margin:10px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#title-result {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+#play {
+    
+	background-color: green;
+	border-radius: 8px;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-color: white;
+	color: white;
+	height: 40px;
+	
+}
+
+#play:hover {
+	border-color: black;
+}
+
+#remove {
+	background-color: red;
+	border-radius: 8px;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-color: white;
+	color: white;
+	height: 40px;
+	
+}
+
+#remove:hover {
+	border-color: black;
+}
+#result{
+    max-width: 100% !important;
+    background-color: beige;
+    height: 300px;
+    margin: 10px;
+}
+nav {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(21, 50, 128);
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    align-items: center;
+}
+nav img {
+    width: 50px;
+    height: 50%;
+    
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="img/My project (2).png" />
+        <p>SEE YR CODE Result-محرر أكواد</p>
+        
+    </nav>
+    <hr/>
+    <main id="maino">
+        <div id="div1">
+        <textarea id="codes" placeholder="WRITE YOUR CODE HERE !">
+         <html> 
+             <head></head>
+             <body></body>
+         </html>
+        </textarea>
+    </div>
+        <div id="buttons">
+            <button id="remove"> DELETE</button>
+            <button id="play">PLAY CODE</button>
+        </div>
+        <hr/>
+        <div>
+            <p id="title-result">Result - النتيجة</p>
+        </div>
+        
+      </main>
+    
+      <div id="result"></div>
+
+
+
+
+    <script src="coding.js"></script>
+</body>
+</html>
